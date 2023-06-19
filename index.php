@@ -15,7 +15,7 @@
         </select>
         <input type="number" name="num2" placeholder="Enter number 2" required>
         <button type="submit">Calculate</button>
-
+    </form>
         <?php
        date_default_timezone_set('Europe/London');
         echo "<br><br>The date you logged on: " . date('j/m/y');
@@ -26,7 +26,7 @@
         ?>
         <br>
         <br>
-
+    <form method="POST" action="calculate2.php">
         <h2>Find the circumference, area and volume of a circle with just its radius using the feature below!</h2>
         <form method="POST" action="calculate2.php">
         <label for="radius">What is the radius?</label><br>
