@@ -1,0 +1,12 @@
+version: '3'
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 8886:80
+    volumes:
+      - ./index.php:/var/www/html/index.php
+      - ./calculate.php:/var/www/html/calculate.php
+      - ./classes:/var/www/html/classes
